@@ -1,26 +1,31 @@
 import java.util.Scanner;
-public class Odev{
-private static void printPattern3(int satir) {
+public class Odev1{
+private static void printPattern3(int row) {
 	
-	for (int i = 1; i <= satir; i++) {
-		// sayilarin önündeki bosluklar
-		int BoslukSayisi = satir - i;
+	for (int i = 1; i <= row; i++) {
+		
+		// sayilarin arasindaki bosluklarin sayisi
+		
+		int whiteSpace = row - i;
 
 		//bastaki bosluklari yazdir
-		printString(" ", BoslukSayisi);
+		
+		printString(" ", whiteSpace);
 
 		//karakter yazdir
+		
 		printString("* ", i);
 
 		//yeni baslik
+		
 		System.out.println("");
 	}
-	for (int i = satir; i >= 1; i--) {
+	for (int i = row; i >= 1; i--) {
 		
-		int BoslukSayisi = satir - i;
+		int whiteSpace = row - i;
 
 		
-		printString(" ", BoslukSayisi);
+		printString(" ", whiteSpace);
 
 	
 		printString("* ", i);
@@ -31,8 +36,8 @@ private static void printPattern3(int satir) {
 }
 
 	
-		private static void printString(String s, int sayi) {
-			for (int j = 0; j < sayi; j++) {
+		private static void printString(String s, int num) {
+			for (int j = 0; j < num; j++) {
 				System.out.print(s);
 			}
 		}

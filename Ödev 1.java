@@ -3,7 +3,7 @@ public class Odev{
 private static void printPattern3(int satir) {
 	
 	for (int i = 1; i <= satir; i++) {
-		// sayilarin önündeki beyaz bosluklar
+		// sayilarin Ã¶nÃ¼ndeki bosluklar
 		int BoslukSayisi = satir - i;
 
 		//bastaki bosluklari yazdir

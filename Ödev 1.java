@@ -3,16 +3,16 @@ public class Odev{
 private static void printPattern3(int satir) {
 	
 	for (int i = 1; i <= satir; i++) {
-		
+		// sayilarin önündeki beyaz bosluklar
 		int BoslukSayisi = satir - i;
 
-	
+		//bastaki bosluklari yazdir
 		printString(" ", BoslukSayisi);
 
-	
+		//karakter yazdir
 		printString("* ", i);
 
-	
+		//yeni baslik
 		System.out.println("");
 	}
 	for (int i = satir; i >= 1; i--) {
